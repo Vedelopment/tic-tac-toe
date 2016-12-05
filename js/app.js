@@ -1,6 +1,10 @@
 // wait for the DOM to finish loading
 console.log("ready")
 $(document).ready(function() {
+  var reset = function () {
+    $(".box").html(" ");
+  }
+  $(".button").on("click", reset);
   var choice = function() {
     var answer = $(this).html();
     if (answer == " ") {
