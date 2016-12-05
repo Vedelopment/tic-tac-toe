@@ -9,6 +9,7 @@ $(document).ready(function() {
     var answer = $(this).html();
     if (answer == " ") {
       $(this).html("X");
+      $(this).css({ 'color': '#FA5755'});
       $(".player").html("O");
     }
     else if (answer == "X") {
