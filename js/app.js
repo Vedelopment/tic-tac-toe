@@ -1,6 +1,27 @@
 // wait for the DOM to finish loading
+console.log("ready")
 $(document).ready(function() {
-  // all code to manipulate the DOM
-  // goes inside this function
-
+  var choice = function() {
+    var answer = $(this).html();
+    if (answer == " ") {
+      console.log("X")
+      $(this).html("X");
+    }
+    else if (answer == "X") {
+      console.log("O")
+      $(this).html("O");
+    }
+    else if (answer == "O") {
+      alert("sorry, this square is already taken!");
+    }
+  }
+  $(".box-one").on("click", choice);
+  $(".box-two").on("click", choice);
+  $(".box-three").on("click", choice);
+  $(".box-four").on("click", choice);
+  $(".box-five").on("click", choice);
+  $(".box-six").on("click", choice);
+  $(".box-seven").on("click", choice);
+  $(".box-eight").on("click", choice);
+  $(".box-nine").on("click", choice);
 });
