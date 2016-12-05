@@ -8,11 +8,9 @@ $(document).ready(function() {
   var choice = function() {
     var answer = $(this).html();
     if (answer == " ") {
-      console.log("X")
       $(this).html("X");
     }
     else if (answer == "X") {
-      console.log("O")
       $(this).html("O");
     }
     else if (answer == "O") {
