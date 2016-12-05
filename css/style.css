@@ -1,6 +1,9 @@
 #board {
   margin-top: 10px;
 }
+hr {
+  border-color: yellow;
+}
 body {
   background-color: #EBC078;
   color: #FA5755;
