@@ -9,10 +9,12 @@ $(document).ready(function() {
     var answer = $(this).html();
     if (answer == " ") {
       $(this).html("X");
+      $(".player").html("O");
     }
     else if (answer == "X") {
       $(this).html("O");
       $(this).css({ 'color': 'yellow'});
+      $(".player").html("X");
     }
     else if (answer == "O") {
       alert("sorry, this square is already taken!");
