@@ -4,6 +4,12 @@
 hr {
   border-color: yellow;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
 body {
   background-color: #EBC078;
   color: #FA5755;
