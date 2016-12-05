@@ -39,11 +39,21 @@ $(document).ready(function() {
       $(".player").html("O");
     }
     draw();
+    win();
   }
   var winner = $();
-  var win = function () {
-    if (win=="true") {
-      alert(" won!");
+  var win = function() {
+    var boxOne = $(".box-one").html();
+    var boxTwo = $(".box-two").html();
+    var boxThree = $(".box-three").html();
+    var boxFour = $(".box-four").html();
+    var boxFive = $(".box-five").html();
+    var boxSix = $(".box-six").html();
+    var boxSeven = $(".box-seven").html();
+    var boxEight = $(".box-eight").html();
+    var boxNine = $(".box-nine").html();
+    if (boxOne==("X") && boxTwo==("X") && boxThree==("X")) {
+    alert("Player X wins!");
     }
   }
   $(".box-one").on("click", choice);
