@@ -3,6 +3,7 @@ console.log("ready")
 $(document).ready(function() {
   var reset = function () {
     $(".box").html(" ");
+    $(".player").html("X");
   }
   $(".button").on("click", reset);
   var choice = function() {
@@ -19,6 +20,12 @@ $(document).ready(function() {
     }
     else if (answer == "O") {
       alert("sorry, this square is already taken!");
+    }
+  }
+  var winner = $();
+  var win = function () {
+    if (win=="true") {
+      alert(" won!");
     }
   }
   $(".box-one").on("click", choice);
