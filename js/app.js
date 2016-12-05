@@ -1,6 +1,20 @@
 // wait for the DOM to finish loading
 console.log("ready")
 $(document).ready(function() {
+  var draw = function() {
+    var boxOne = $(".box-one").html();
+    var boxTwo = $(".box-two").html();
+    var boxThree = $(".box-three").html();
+    var boxFour = $(".box-four").html();
+    var boxFive = $(".box-five").html();
+    var boxSix = $(".box-six").html();
+    var boxSeven = $(".box-seven").html();
+    var boxEight = $(".box-eight").html();
+    var boxNine = $(".box-nine").html();
+    if (boxOne!==(" ") && boxTwo!==(" ") && boxThree!==(" ") && boxFour!==(" ") && boxFive!=(" ") && boxSix!==(" ") && boxSeven!==(" ") && boxEight!==(" ") && boxNine!==(" ")) {
+    alert("It's a draw! Reset and play again.");
+    }
+  }
   var reset = function () {
     $(".box").html(" ");
     $(".player").html("X");
@@ -19,8 +33,12 @@ $(document).ready(function() {
       $(".player").html("X");
     }
     else if (answer == "O") {
-      alert("sorry, this square is already taken!");
+    //  alert("sorry, this square is already taken!");
+      $(this).html("X");
+      $(this).css({ 'color': '#FA5755'});
+      $(".player").html("O");
     }
+    draw();
   }
   var winner = $();
   var win = function () {
