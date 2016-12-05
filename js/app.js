@@ -12,6 +12,7 @@ $(document).ready(function() {
     }
     else if (answer == "X") {
       $(this).html("O");
+      $(this).css({ 'color': 'yellow'});
     }
     else if (answer == "O") {
       alert("sorry, this square is already taken!");
