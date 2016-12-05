@@ -52,8 +52,24 @@ $(document).ready(function() {
     var boxSeven = $(".box-seven").html();
     var boxEight = $(".box-eight").html();
     var boxNine = $(".box-nine").html();
-    if (boxOne==("X") && boxTwo==("X") && boxThree==("X")) {
+    if (
+      (boxOne==("X") && boxTwo==("X") && boxThree==("X"))
+    ||(boxFour==("X") && boxFive==("X") && boxSix==("X"))
+    ||(boxSeven==("X") && boxEight==("X") && boxNine==("X"))
+    ||(boxOne==("X") && boxFour==("X") && boxSeven==("X"))
+    ||(boxTwo==("X") && boxFive==("X") && boxEight==("X"))
+    ||(boxThree==("X") && boxSix==("X") && boxNine==("X"))
+    ) {
     alert("Player X wins!");
+  } else if (
+      (boxOne==("O") && boxTwo==("O") && boxThree==("O"))
+    ||(boxFour==("O") && boxFive==("O") && boxSix==("O"))
+    ||(boxSeven==("O") && boxEight==("O") && boxNine==("O"))
+    ||(boxOne==("O") && boxFour==("O") && boxSeven==("O"))
+    ||(boxTwo==("O") && boxFive==("O") && boxEight==("O"))
+    ||(boxThree==("O") && boxSix==("O") && boxNine==("O"))
+    ) {
+    alert("Player O wins!");
     }
   }
   $(".box-one").on("click", choice);

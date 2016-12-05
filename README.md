@@ -1,5 +1,8 @@
 # Tic Tac Toe - Weekend Lab
 
+Goals:
+  - Find more succinct way of determining a win (use .filter?)
+
 **Objective:** Build a tic-tac-toe game in HTML, CSS, and JavaScript.
 
 
